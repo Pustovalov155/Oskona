@@ -44,7 +44,7 @@ class TestMain:
         self.driver.get('https://mnogosna.ru/')
         self.driver.find_element(By.XPATH, '//*[@id="page-footer"]/div[2]/div/div/div[5]/div[2]/a[1]').click()
         time.sleep(1)
-        #self.driver.find_element(By.XPATH, '//*[@id="bx_3218110189_1088531"]/div[2]').click()
+        self.driver.find_element(By.XPATH, '//*[@id="bx_3218110189_1088531"]/div[2]').click()
         check.equal(self.driver.current_url, 'https://mnogosna.ru/article/')
 
     def test_news_brand(self):
